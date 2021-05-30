@@ -1,0 +1,31 @@
+DEFAULT_LOGGER_LEVEL = "critical"
+
+HOST_KEY = "host"
+PORT_KEY = "port"
+USERNAME_KEY = "username"
+PASSWORD_KEY = "password"
+DATABASE_NAME_KEY = "database_name"
+
+CONNECTION_CONFIG_MANDATORY_KEYS = [
+    HOST_KEY,
+    PORT_KEY,
+    USERNAME_KEY,
+    PASSWORD_KEY,
+    DATABASE_NAME_KEY
+]
+
+INFORMATION_SCHEMA_KEY = "information_schema"
+SCHEMATA_KEY = "schemata"
+TABLES_KEY = "tables"
+COLUMNS_KEY = "columns"
+
+PUBLIC_SCHEMA_KEY = "public"
+PG_CATALOG_KEY = "pg_catalog"
+PG_TOAST_KEY = "pg_toast"
+
+DEFAULT_SCHEMA_LIST = [
+    PUBLIC_SCHEMA_KEY,
+    PG_TOAST_KEY,
+    PG_CATALOG_KEY,
+    INFORMATION_SCHEMA_KEY
+]
