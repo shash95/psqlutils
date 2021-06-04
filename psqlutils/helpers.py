@@ -7,12 +7,13 @@ MODULE_NAME = "helpers"
 
 def get_value_list(query, connection_config, log_level):
     """
-    :param query:
-        Type:string
-        Purpose: The query to be executed. Multiple queries are not supported.
+    :
+    :type query: string
+    :param query: The query to be executed. Multiple queries are not supported.
+
+    :type connection_config: dict
     :param connection_config:
-        Type: dict
-        Purpose: Connection details required to connect to the database
+        Connection details required to connect to the database
         Details:
         Following is the dict structure expected by the module
         {
@@ -27,9 +28,9 @@ def get_value_list(query, connection_config, log_level):
         key db_name: Database name on which the query has to be executed
         key username: Username to connect to the database
         key password: Password to connect to the database
-    :param log_level:
-        Type: string
-        Purpose: Sets the logging level
+
+    :param log_level: string
+    :param log_level: Sets the logging level
     """
     logger = get_logger(MODULE_NAME, log_level)
     logger.info("Starting method get_value_list()")
